@@ -1,0 +1,191 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+    color: #fff;
+}
+
+body {
+    background-color: #121212; 
+}
+
+header {
+    background-color: #000;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* Team Profile*/
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-top: 150px;
+    color: #ff7e5f; 
+    letter-spacing: 2px;
+}
+
+
+/* Line after team profile*/
+hr {
+    border: 1px solid #333;
+    width: 50%;
+}
+
+/*Sizing of the logo*/
+.logo img {
+    width: 150px; 
+    height: auto; 
+	
+}
+
+/* flexbox setup for equal height and width cards */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.column {
+    flex: 1;
+    max-width: 35%; 
+    margin: 16px;
+    padding: 2px 10px;
+    box-sizing: border-box;
+}
+
+.card { 
+    background-color: #1c1c1c;
+    border: 1px solid #333; 
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    flex: 1;
+    min-height: 450px; 
+    display: flex;
+    align-items: stretch; 
+}
+
+/*     */
+.container {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Adjusting the size for smaller screens */
+@media screen and (max-width: 670px) { 
+    .column { 
+        max-width: 100%;
+    } 
+}
+
+
+/*Button #1 for view details of a member*/
+.button { 
+    border: none; 
+    padding: 10px 15px; 
+    color: white; 
+    background-color: #ff7e5f; 
+    text-align: center; 
+    cursor: pointer; 
+    width: 100%; 
+    margin-bottom: 10px; 
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+} 
+
+.button:hover { 
+    background-color: #e76e51; 
+} 
+
+
+/*Each Member Profile Card*/
+.profile-card {
+    background-color: #1c1c1c;
+    border: 1px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-image-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 200px;
+}
+
+/*Each Member Profile Image (Circular)*/
+.profile-image {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    
+}
+
+/*Black footer for the button */
+
+footer {
+    padding: 10px 0;
+    width: 100%;
+    background-color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+/*Button #2 for see other members*/
+.btn {
+    border: none; 
+    padding: 10px 15px; 
+    color: white; 
+    background-color: #ff7e5f; 
+    text-align: center; 
+    cursor: pointer; 
+    margin: 10px 0; 
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover { 
+    background-color: #e76e51; 
+	
+	
+}
+
+/*Check my profile links style*/
+.nav-links a {
+    color: #ffffff; 
+    text-decoration: none; 
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s; 
+}
+
+
+.nav-links a:hover {
+    text-decoration: underline; 
+    color: #ff7e5f; 
+}
